@@ -1,4 +1,3 @@
-import imageFan from "../../images/fans.gif";
 const TemplateWork = (props) => {
   return (
     <li>
@@ -8,7 +7,7 @@ const TemplateWork = (props) => {
           <p>{props.description}</p>
 
           <div>
-            <img src={imageFan}></img>
+            <img src={props.image}></img>
           </div>
         </div>{" "}
       </a>
