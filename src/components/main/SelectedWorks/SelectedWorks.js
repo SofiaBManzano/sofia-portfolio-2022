@@ -1,10 +1,10 @@
 import TemplateWork from "./TemplateWork";
-import imageFan from "../../images/fans.gif";
-import imageFilter from "../../images/filtro.gif";
-import imageHangman from "../../images/ahorcado.gif";
-import imageHP from "../../images/hp.jpg";
-import imageFresh from "../../images/make-it-fresh.gif";
-import imageBack from "../../images/back-to.gif";
+import imageFan from "../../../images/fans.gif";
+import imageFilter from "../../../images/filtro.gif";
+import imageHangman from "../../../images/ahorcado.gif";
+import imageHP from "../../../images/hp.jpg";
+import imageFresh from "../../../images/make-it-fresh.gif";
+import imageBack from "../../../images/back-to.gif";
 const SelectedWorks = () => {
   return (
     <section id="work">

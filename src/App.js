@@ -1,14 +1,23 @@
 import "./App.scss";
+import Rrss from "./components/footer/rrss/Rrss";
 
 import Welcome from "./components/header/Welcome";
-import SelectedWorks from "./components/main/SelectedWorks";
+import Contact from "./components/main/Contact/Contact";
+import SelectedWorks from "./components/main/SelectedWorks/SelectedWorks";
 function App() {
   return (
     <>
-      <header>
+      <header className="c-block">
         <Welcome />
       </header>
-      <SelectedWorks />
+      <main className="c-block">
+        {" "}
+        <SelectedWorks />
+        <Contact />
+      </main>
+      <footer className="c-block">
+        <Rrss />
+      </footer>
     </>
   );
 }

@@ -13,8 +13,10 @@ const Welcome = () => {
       </p>
       <p>
         Esto me ha entrenado en mi gran adaptación a las necesidades de cada
-        proyecto, tiempos ajustados y a luchar contra mi propio código.
+        proyecto, a gestionar tiempos ajustados y a comunicarme con el resto de
+        equipos.
       </p>
+
       <p>
         Además de front-end, tengo un fuerte background en edición y
         postproducción de video. En mi tiempo libre me gusta hacer fotografía
