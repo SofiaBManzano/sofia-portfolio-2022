@@ -1,7 +1,7 @@
 import "./App.scss";
-import Rrss from "./components/footer/rrss/Rrss";
+import Rrss from "./components/Footer/rrss/Rrss";
 
-import Welcome from "./components/header/Welcome";
+import Welcome from "./components/Header/Welcome";
 import Contact from "./components/main/Contact/Contact";
 import SelectedWorks from "./components/main/SelectedWorks/SelectedWorks";
 function App() {
