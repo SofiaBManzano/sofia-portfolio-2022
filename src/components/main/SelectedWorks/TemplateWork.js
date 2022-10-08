@@ -6,7 +6,7 @@ const TemplateWork = (props) => {
         <div class="c-work-subtitle">
           <p>{props.description}</p>
 
-          <div class="c-img-wrapper">
+          <div class="c-img-wrapper c-img-wrapper--work">
             <img class="u-bg-image" src={props.image}></img>
           </div>
         </div>{" "}

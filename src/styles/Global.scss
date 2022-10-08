@@ -6,6 +6,19 @@ p {
     margin-block-end: 0;
     margin: 0 0 10px;
 }
-body {
-    font-family: $text-font;
+
+.c-block-title{
+font-weight: 600;
+font-size: 24px;
+width: fit-content;
+margin-bottom: 24px;
+}
+.u-text-underline{
+border-bottom: rgb(24, 24, 24) 2px solid;
+}
+.c-block-section{
+   margin-bottom: 40px;
+}
+.u-fullwidth{
+    width: 100vw !important;
 }

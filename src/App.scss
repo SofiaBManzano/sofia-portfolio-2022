@@ -1,11 +1,12 @@
-// @import "./styles/Global.scss";
+@import "./styles/Global.scss";
 @import "./styles/Mixins.scss";
 @import "./styles/Reset.scss";
 @import "./styles/Variables.scss";
 
 
-
+@import "./components/header/Welcome.scss";
 @import "./components/main/SelectedWorks/TemplateWork.scss";
+
 //*------------GLOBAL------------*//
 
 p {
@@ -18,12 +19,17 @@ p {
 body {
     font-family: $text-font;
     background-color: rgb(255, 246, 235);
-    font-size: 24px;
+    color: rgb(24, 24, 24);
+    font-size: 16px;
+    line-height: 1.4;
+    letter-spacing: 0.2px;
 }
 .u-link-reset{
     text-decoration: none !important;
 }
-a:-webkit-any-link { text-decoration: none; }
+a:-webkit-any-link {
+     text-decoration: none;
+     }
 .c-block{
     margin-bottom: 40px;
     padding: 0 50px;
@@ -33,4 +39,14 @@ a:-webkit-any-link { text-decoration: none; }
         margin-left: auto;
         margin-right: auto;
     }
+}
+.c-block-header{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    padding-top: 40%;
+    padding-bottom: 20px;
 }

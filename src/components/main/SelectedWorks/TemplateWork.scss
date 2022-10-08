@@ -1,17 +1,29 @@
 .c-block-work{
     margin-bottom: 20px;
- 
+ background-color: $brown-color;
+ padding-top: 80px;
+ padding-right: 20px;
+ padding-bottom: 40px;
+ padding-left: 20px;
+
+}
+.c-work-subtitle{
+    color: $cream-color;
+
 }
 .c-work-title{
-    font-size: 32px;
-    padding-bottom: 1em;
+    font-size: 24px;
+    color: $cream-color;
+    padding-bottom: 0.5em;
 }
 .c-img-wrapper{
     position: relative;
-    aspect-ratio: 832 / 326;
+   
     width: 100%;
-    height: 100%;
 
+    &--work{
+aspect-ratio: 832 / 326;
+    }
 }
 
 .u-bg-image{
@@ -22,4 +34,19 @@
   right: 0;
   display: block;
   width: 100%;
+}
+
+
+//CARRUSEL
+.react-multiple-carousel__arrow--right{
+    top: calc(5% + 1px) !important;
+    right: calc(30% + 1px);
+    background-color: $brown-color;
+}
+.react-multiple-carousel__arrow--left{
+    top: calc(5% + 1px) !important;
+    left: calc(30% + 1px);
+}
+.react-multiple-carousel__arrow{
+    background-color: $brown-color !important;
 }

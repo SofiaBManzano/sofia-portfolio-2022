@@ -1,0 +1,22 @@
+.c-header-title{
+    font-weight: 600;
+    font-size: 27px;
+    padding-top: 20px;
+}
+.c-header-subtitle span{
+    display: block;
+    text-align: center;
+}
+.c-header-title span{
+    display: block;
+}
+.c-img-wrapper{
+    &__portrait{
+aspect-ratio: 500 / 570;
+max-width: 100px;
+
+&--border{
+    border-radius: 27px 40px 3px
+}
+    }
+}

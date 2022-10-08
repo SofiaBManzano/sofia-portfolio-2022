@@ -12,7 +12,6 @@ import "react-multi-carousel/lib/styles.css";
 const SelectedWorks = () => {
   const responsive = {
     superLargeDesktop: {
-      // the naming can be any, depends on you.
       breakpoint: { max: 4000, min: 3000 },
       items: 1,
     },
@@ -22,7 +21,7 @@ const SelectedWorks = () => {
     },
     tablet: {
       breakpoint: { max: 1024, min: 464 },
-      items: 2,
+      items: 1,
     },
     mobile: {
       breakpoint: { max: 464, min: 0 },
@@ -30,10 +29,10 @@ const SelectedWorks = () => {
     },
   };
   return (
-    <section id="work">
-      <h2>Trabajos seleccionados</h2>
+    <section id="work " class="c-block-section">
+      <h2 class="c-block-title u-text-underline">Trabajos seleccionados</h2>
       <ul>
-        <Carousel responsive={responsive}>
+        <Carousel class="prueba " responsive={responsive}>
           <TemplateWork
             title="Configurador de ventiladores"
             description="Proyecto heredado que refactoricé a la última versión de React."
