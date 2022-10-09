@@ -1,12 +1,17 @@
 .c-block-contact{
-    
+    display: inline-block;
    padding: 5%;
+   @include tablet{
+    max-width: 60%;
+    margin-left: auto !important;
+    margin-right: auto !important;
+   }
+  
 &--border{
     border: $black-color 1px solid;
 }
 &--margin-vertically{
-    margin-top: 84px !important;
-    margin-bottom: 84px !important;
+    margin: 82px auto !important
 }
 }
 
@@ -20,4 +25,28 @@
 
 .c-block-contact .u-bold{
 padding-left: 5px;
+}
+.c-block-contact .u-hover-underline{
+    @include desktop{   display: inline-block;
+  position: relative;}
+ 
+
+}
+.c-block-contact .u-hover-underline:after{
+    @include desktop { 
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: $black-color;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;}
+}
+.c-block-contact:hover .u-hover-underline:after{
+    @include desktop{ 
+    transform: scaleX(1);
+  transform-origin: bottom left;}
 }

@@ -34,7 +34,7 @@ const SelectedWorks = () => {
         Trabajos seleccionados
       </h2>
 
-      <Carousel className="prueba " responsive={responsive}>
+      <Carousel responsive={responsive}>
         <TemplateWork
           title="Configurador de ventiladores"
           description="Proyecto heredado que refactoricé a la última versión de React."

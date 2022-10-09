@@ -1,11 +1,32 @@
+.c-block.c-block-header{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    padding-top: 40%;
+    padding-bottom: 20px;
+
+     @include desktop{
+        padding-top: 10%;
+     }
+}
 .c-header-title{
     font-weight: 600;
     font-size: 27px;
     padding-top: 20px;
 }
-.c-header-subtitle span{
-    display: block;
-    text-align: center;
+
+.c-header-subtitle {
+    &__text span{
+        display: block;
+        text-align: center;
+    }
+@include tablet{
+    margin-bottom: 62px;
+}
+ 
 }
 .c-header-title span{
     display: block;

@@ -3,7 +3,7 @@ const About = () => {
     <section className="c-block-section">
       {" "}
       <h2 className=" c-block-title u-bold">
-        Ok... <span>pero cuéntame más de ti </span>
+        Ok... <span className="u-span-inline">pero cuéntame más de ti </span>
       </h2>
       <p>
         Antes del front-end, estuvo el vídeo. Durante 4 años estuve trabajando

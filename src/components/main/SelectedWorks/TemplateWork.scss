@@ -5,7 +5,9 @@
  padding-right: 20px;
  padding-bottom: 40px;
  padding-left: 20px;
-
+@include tablet {
+    padding-top: 40px;
+}
 }
 .c-work-subtitle{
     color: $cream-color;
@@ -17,8 +19,7 @@
     padding-bottom: 0.5em;
 }
 .c-img-wrapper{
-    position: relative;
-   
+    position: relative;  
     width: 100%;
 
     &--work{
@@ -40,13 +41,29 @@ aspect-ratio: 832 / 326;
 //CARRUSEL
 .react-multiple-carousel__arrow--right{
     top: calc(5% + 1px) !important;
-    right: calc(30% + 1px);
+
     background-color: $brown-color;
+    @include tablet{
+        top: inherit !important;
+
+    }
+  
 }
 .react-multiple-carousel__arrow--left{
     top: calc(5% + 1px) !important;
-    left: calc(30% + 1px);
+    @include tablet{
+        top: inherit !important;
+
+    }
 }
 .react-multiple-carousel__arrow{
     background-color: $brown-color !important;
+    @include tablet{
+        background-color: $black-color !important;
+    }
+}
+.react-multiple-carousel__arrow::before{
+    @include tablet{
+        color: $cream-color !important;
+    }
 }

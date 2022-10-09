@@ -15,9 +15,9 @@ const Welcome = () => {
           <h3>y soy front-end developer.</h3>
         </article>
       </section>
-      <a href="#work">
+      <a className="c-header-subtitle" href="#work">
         {" "}
-        <p className="c-header-subtitle">
+        <p className="c-header-subtitle__text">
           ¿Que qué he hecho el último año?<span>¡Acompáñame!</span>
         </p>{" "}
         <div className="u-text-align-center" href="#work">
