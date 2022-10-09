@@ -7,9 +7,11 @@ p {
     margin: 0 0 24px !important;
 
 }
-
+a:-webkit-any-link {
+    text-decoration: none;
+    color: $black-color;
+    }
 .c-block-title{
-font-weight: 600;
 font-size: 24px;
 width: fit-content;
 margin-bottom: 24px;
@@ -26,6 +28,14 @@ border-bottom: rgb(24, 24, 24) 2px solid;
 .u-fullwidth{
     width: 100vw !important;
 }
+
 .u-text-align-center{
     text-align: center;
+}
+.u-bold{
+    font-weight: 600;
+}
+.u-border-round{
+    border-radius: 27px 40px 3px;
+    
 }

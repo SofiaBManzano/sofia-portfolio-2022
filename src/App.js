@@ -13,13 +13,12 @@ function App() {
         <Welcome />
       </header>
       <main className="c-block">
-        {" "}
         <SelectedWorks />
         <NewJob />
         <About />
         <Contact />
       </main>
-      <footer className="c-block">
+      <footer>
         <Rrss />
       </footer>
     </>

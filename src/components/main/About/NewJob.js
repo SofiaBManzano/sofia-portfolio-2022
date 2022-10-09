@@ -1,8 +1,10 @@
 const NewJob = () => {
   return (
-    <section class="c-block-section">
+    <section className="c-block-section">
       {" "}
-      <h2 class=" c-block-title">¿Por qué podría llamarte la atención? </h2>
+      <h2 className=" c-block-title u-bold">
+        ¿Por qué podría llamarte la atención?{" "}
+      </h2>
       <p>
         Soy desarrolladora front-end junior... ¡Pero no cualquier desarrolladora
         junior!{" "}

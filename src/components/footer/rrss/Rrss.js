@@ -1,10 +1,9 @@
 import TemplateRrss from "./TemplateRrss";
 
-
 const Rrss = () => {
   return (
-    <nav>
-      <ul className="footer__rrss">
+    <nav className=" c-block-footer">
+      <ul className="c-block-footer__list">
         <TemplateRrss href="https://github.com/SofiaBManzano" rrss="github" />
         <TemplateRrss
           href="https://www.linkedin.com/in/sofiablas/"

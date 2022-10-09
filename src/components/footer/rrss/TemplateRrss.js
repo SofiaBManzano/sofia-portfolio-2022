@@ -2,7 +2,7 @@ const TemplateRrss = (props) => {
   return (
     <li>
       <a href={props.href} target="_blank" rel="noreferrer">
-        <span>{props.rrss}</span>
+        <span className="c-block-footer__list--cream-text">{props.rrss}</span>
       </a>
     </li>
   );

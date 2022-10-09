@@ -1,0 +1,23 @@
+.c-block-contact{
+    
+   padding: 5%;
+&--border{
+    border: $black-color 1px solid;
+}
+&--margin-vertically{
+    margin-top: 84px !important;
+    margin-bottom: 84px !important;
+}
+}
+
+.c-block-icon--hand {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 26px;
+    transform: rotate(-17deg)
+}
+
+.c-block-contact .u-bold{
+padding-left: 5px;
+}
