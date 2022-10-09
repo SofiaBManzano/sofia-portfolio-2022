@@ -22,7 +22,8 @@ const Welcome = () => {
         {" "}
         <p class="c-header-subtitle">
           ¿Que qué he hecho el último año?<span>¡Acompáñame!</span>
-        </p>
+        </p>{" "}
+        <div class="u-text-align-center">↓</div>
       </section>
     </>
   );

@@ -2,6 +2,7 @@ import "./App.scss";
 import Rrss from "./components/footer/rrss/Rrss";
 
 import Welcome from "./components/header/Welcome";
+import NewJob from "./components/main/About/NewJob";
 import About from "./components/main/About/About";
 import Contact from "./components/main/Contact/Contact";
 import SelectedWorks from "./components/main/SelectedWorks/SelectedWorks";
@@ -14,6 +15,7 @@ function App() {
       <main className="c-block">
         {" "}
         <SelectedWorks />
+        <NewJob />
         <About />
         <Contact />
       </main>

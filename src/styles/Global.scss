@@ -4,7 +4,8 @@ p {
     margin-block-start: 0;
     -webkit-margin-after: 0;
     margin-block-end: 0;
-    margin: 0 0 10px;
+    margin: 0 0 24px !important;
+
 }
 
 .c-block-title{
@@ -12,6 +13,9 @@ font-weight: 600;
 font-size: 24px;
 width: fit-content;
 margin-bottom: 24px;
+}
+.c-block-title span{
+    display: block;
 }
 .u-text-underline{
 border-bottom: rgb(24, 24, 24) 2px solid;
@@ -21,4 +25,7 @@ border-bottom: rgb(24, 24, 24) 2px solid;
 }
 .u-fullwidth{
     width: 100vw !important;
+}
+.u-text-align-center{
+    text-align: center;
 }
