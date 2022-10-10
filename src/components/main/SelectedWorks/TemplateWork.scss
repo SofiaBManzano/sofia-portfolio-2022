@@ -1,6 +1,6 @@
 .c-block-work{
     margin-bottom: 20px;
- background-color: $brown-color;
+ background-color: $blue-color;
  padding-top: 80px;
  padding-right: 20px;
  padding-bottom: 40px;
@@ -42,7 +42,7 @@ aspect-ratio: 832 / 326;
 .react-multiple-carousel__arrow--right{
     top: calc(5% + 1px) !important;
 
-    background-color: $brown-color;
+    background-color: $blue-color;
     @include tablet{
         top: inherit !important;
 
@@ -57,7 +57,7 @@ aspect-ratio: 832 / 326;
     }
 }
 .react-multiple-carousel__arrow{
-    background-color: $brown-color !important;
+    background-color: $blue-color !important;
     @include tablet{
         background-color: $black-color !important;
     }
