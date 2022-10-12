@@ -1,6 +1,6 @@
 .c-block-work{
     margin-bottom: 20px;
- background-color: $blue-color;
+ background-color: $secondary-color;
  padding-top: 80px;
  padding-right: 20px;
  padding-bottom: 40px;
@@ -10,12 +10,12 @@
 }
 }
 .c-work-subtitle{
-    color: $cream-color;
+    color: $primary-color;
 
 }
 .c-work-title{
     font-size: 24px;
-    color: $cream-color;
+    color: $primary-color;
     padding-bottom: 0.5em;
 }
 .c-img-wrapper{
@@ -42,7 +42,7 @@ aspect-ratio: 832 / 326;
 .react-multiple-carousel__arrow--right{
     top: calc(5% + 1px) !important;
 
-    background-color: $blue-color;
+    background-color: $secondary-color;
     @include tablet{
         top: inherit !important;
 
@@ -57,13 +57,13 @@ aspect-ratio: 832 / 326;
     }
 }
 .react-multiple-carousel__arrow{
-    background-color: $blue-color !important;
+    background-color: $secondary-color !important;
     @include tablet{
         background-color: $black-color !important;
     }
 }
 .react-multiple-carousel__arrow::before{
     @include tablet{
-        color: $cream-color !important;
+        color: $primary-color !important;
     }
 }

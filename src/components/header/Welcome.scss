@@ -5,11 +5,12 @@
     justify-content: space-between;
     align-items: center;
 
-    padding-top: 40%;
-    padding-bottom: 20px;
+    padding-top: 30%;
+    padding-bottom: 15%;
 
      @include desktop{
         padding-top: 10%;
+        padding-bottom: 20px;
      }
 }
 .c-header-title{
@@ -35,6 +36,9 @@
     &__portrait{
 aspect-ratio: 500 / 570;
 max-width: 100px;
+@include desktop{
+    max-width: 200px;
+}
 
 &--border{
     border-radius: 27px 40px 3px

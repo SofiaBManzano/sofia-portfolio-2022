@@ -2,7 +2,7 @@ const About = () => {
   return (
     <section className="c-block-section">
       {" "}
-      <h2 className=" c-block-title u-bold">
+      <h2 className=" c-block-title u-bold-italic">
         Ok... <span className="u-span-inline">pero cuéntame más de ti </span>
       </h2>
       <p>
@@ -21,8 +21,8 @@ const About = () => {
       </p>
       <p>
         Si todavía tienes curiosidad y quieres ver qué estaba haciendo antes de
-        reprogramarme en desarrolladora front-end, puedes dar play reel
-        audiovisual.
+        reprogramarme en desarrolladora front-end, puedes{" "}
+        <span class="u-bold-italic">dar play a mi reel</span> audiovisual.
       </p>
       <div className="c-block-iframe-wrapper">
         <iframe

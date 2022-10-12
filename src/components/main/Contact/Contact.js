@@ -9,7 +9,7 @@ const Contact = () => {
         className="c-block-title c-block-contact c-block-contact-link c-block-contact--margin-vertically c-block-contact--border u-border-round"
       >
         Si crees que un perfil como el mío puede encajarte,
-        <span className="u-hover-underline u-bold">hablemos</span>
+        <span className="u-hover-underline u-bold-italic">hablemos</span>
       </a>
       <span className="c-block-contact c-block-icon--hand c-block-contact--margin-vertically">
         🖐🏻​

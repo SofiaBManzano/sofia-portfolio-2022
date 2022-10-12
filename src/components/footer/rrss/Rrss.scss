@@ -1,13 +1,17 @@
 .c-block-footer{
-    border-top: 1px solid $black-color;
+  
     padding: 13px 0;
+background-color: $secondary-color;
 
 &__list{
+color: $secondary-color;
 
     display: flex;
 flex-direction: row;
 justify-content: space-around;
 
 }
-
+&__text span{
+    color: white;
+}
 }
