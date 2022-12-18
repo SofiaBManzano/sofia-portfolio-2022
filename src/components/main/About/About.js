@@ -1,6 +1,6 @@
 const About = () => {
   return (
-    <section className="c-block-section">
+    <article className="c-block-section">
       {" "}
       <h2 className=" c-block-title u-bold-italic">
         Ok... <span className="u-span-inline">pero cuéntame más de ti </span>
@@ -22,19 +22,20 @@ const About = () => {
       <p>
         Si todavía tienes curiosidad y quieres ver qué estaba haciendo antes de
         reprogramarme en desarrolladora front-end, puedes{" "}
-        <span class="u-bold-italic">dar play a mi reel</span> audiovisual.
+        <span className="u-bold-italic">dar play a mi reel</span> audiovisual.
       </p>
       <div className="c-block-iframe-wrapper">
         <iframe
           src="https://player.vimeo.com/video/311440378?h=e5ab699e2f&autoplay=1&loop=1&title=0&byline=0&portrait=0&autopause=0&muted=1&background=0"
           className="c-block-iframe"
           frameBorder="0"
+          title="reel"
           allow="autoplay; fullscreen; picture-in-picture"
           allowFullScreen
         ></iframe>
       </div>
       <script src="https://player.vimeo.com/api/player.js"></script>
-    </section>
+    </article>
   );
 };
 

@@ -1,6 +1,6 @@
 const NewJob = () => {
   return (
-    <section className="c-block-section">
+    <article className="c-block-section">
       {" "}
       <h2 className=" c-block-title u-bold-italic">
         ¿Por qué podría llamarte la atención?{" "}
@@ -23,12 +23,12 @@ const NewJob = () => {
       </p>
       <p>Pero ahora busco algo más.</p>{" "}
       <p>
-        Me encantaría <span class="u-bold-italic">ser parte</span> de un equipo
-        front. Mi objetivo es contribuir con mis habilidades en un trabajo que
-        me permita seguir aprendiendo y adquiriendo conocimientos para llevar mi
-        potencial a su máximo posible.
+        Me encantaría <span className="u-bold-italic">ser parte</span> de un
+        equipo front. Mi objetivo es contribuir con mis habilidades en un
+        trabajo que me permita seguir aprendiendo y adquiriendo conocimientos
+        para llevar mi potencial a su máximo posible.
       </p>
-    </section>
+    </article>
   );
 };
 

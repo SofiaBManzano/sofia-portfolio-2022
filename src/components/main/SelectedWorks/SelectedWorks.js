@@ -29,7 +29,7 @@ const SelectedWorks = () => {
     },
   };
   return (
-    <section id="work" className="c-block-section">
+    <article id="work" className="c-block-section">
       <h2 className="c-block-title u-bold-italic">Trabajos seleccionados</h2>
 
       <Carousel responsive={responsive}>
@@ -70,7 +70,7 @@ const SelectedWorks = () => {
           image={imageBack}
         />
       </Carousel>
-    </section>
+    </article>
   );
 };
 export default SelectedWorks;
