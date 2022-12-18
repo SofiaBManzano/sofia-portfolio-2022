@@ -1,24 +1,29 @@
 import { Link } from "react-router-dom";
 const MenuHeader = () => {
   return (
-    <header>
+    <>
+      <div className="c-header__content-menu">
+        {" "}
+        <div className="c-header__menu"> </div>
+      </div>
+
       <nav>
         <ul>
           <li>
-            <Link to="/#/">Ir al inicio</Link>
+            <Link to="/">Ir al inicio</Link>
           </li>
           <li>
-            <Link to="/#/contacto">Ir a contacto</Link>
+            <Link to="/contacto">Ir a contacto</Link>
           </li>
           <li>
-            <Link to="/#/about">¿Por qué yo?</Link>
+            <Link to="/about">¿Por qué yo?</Link>
           </li>
           <li>
-            <Link to="/#/trabajos-seleccionados">Trabajos seleccionados</Link>
+            <Link to="/trabajos-seleccionados">Trabajos seleccionados</Link>
           </li>
         </ul>
       </nav>
-    </header>
+    </>
   );
 };
 export default MenuHeader;

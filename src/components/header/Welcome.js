@@ -1,5 +1,5 @@
 import portrait from "../../images/foto-sofia-bn.jpg";
-
+import { Link } from "react-router-dom";
 const Welcome = () => {
   return (
     <>
@@ -15,15 +15,11 @@ const Welcome = () => {
           <h3>y soy front-end developer.</h3>
         </div>
       </article>
-      <a className="c-header-subtitle" href="#work">
-        {" "}
+      <Link className="c-header-subtitle" to="/trabajos-seleccionados">
         <p className="c-header-subtitle__text">
           ¿Que qué he hecho el último año?<span>¡Acompáñame!</span>
         </p>
-        <div className="u-text-align-center" href="#work">
-          ↓
-        </div>
-      </a>
+      </Link>
     </>
   );
 };

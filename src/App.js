@@ -30,7 +30,7 @@ function App() {
           }
         />
         <Route
-          path="/contacto"
+          path="contacto"
           element={
             <section className="c-block">
               <Contact />
@@ -47,23 +47,6 @@ function App() {
         />
       </Routes>
     </div>
-
-    // <>
-
-    //       <header className="c-block c-block-header">
-    //         <Welcome />
-    //       </header>
-
-    //   <main className="c-block">
-    //     <SelectedWorks />
-    //     <NewJob />
-    //     <About />
-    //     <Contact />
-    //   </main>
-    //   <footer>
-    //     <Rrss />
-    //   </footer>
-    // </>
   );
 }
 
