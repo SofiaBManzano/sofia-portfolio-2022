@@ -1,7 +1,8 @@
 import "./App.scss";
 import { Route, Routes } from "react-router-dom";
 import MenuHeader from "./components/header/MenuHeader";
-import Rrss from "./components/footer/rrss/Rrss";
+import {useState} from 'react';
+//import Rrss from "./components/footer/rrss/Rrss";
 import Welcome from "./components/header/Welcome";
 import NewJob from "./components/main/About/NewJob";
 import About from "./components/main/About/About";
@@ -9,9 +10,15 @@ import Contact from "./components/main/Contact/Contact";
 import SelectedWorks from "./components/main/SelectedWorks/SelectedWorks";
 
 function App() {
+
+  const [menuOpen, setMenuOpen] = useState("u-hidden");
+
+  const updateMenu = (value) => {
+    setMenuOpen(value)
+  }
   return (
     <div>
-      <MenuHeader />
+      <MenuHeader menuOpen={menuOpen} updateMenu={updateMenu}/>
       <Routes>
         <Route
           path="/"

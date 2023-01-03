@@ -1,28 +1,18 @@
-import { Link } from "react-router-dom";
-const MenuHeader = () => {
+import ItemsMenu from "./ItemsMenu";
+const MenuHeader = (props) => {
+  function changeState() {
+    if (props.menuOpen === "u-hidden") {
+      props.updateMenu("");
+    } else {
+      props.updateMenu("u-hidden");
+    }
+  }
   return (
     <>
-      <div className="c-header__content-menu">
-        {" "}
+      <div className="c-header__content-menu" onClick={changeState}>
         <div className="c-header__menu"> </div>
       </div>
-
-      <nav>
-        <ul>
-          <li>
-            <Link to="/">Ir al inicio</Link>
-          </li>
-          <li>
-            <Link to="/contacto">Ir a contacto</Link>
-          </li>
-          <li>
-            <Link to="/about">¿Por qué yo?</Link>
-          </li>
-          <li>
-            <Link to="/trabajos-seleccionados">Trabajos seleccionados</Link>
-          </li>
-        </ul>
-      </nav>
+      <ItemsMenu menuOpen={props.menuOpen} />
     </>
   );
 };
