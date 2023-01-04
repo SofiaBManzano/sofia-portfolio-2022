@@ -26,10 +26,18 @@ function App() {
           }
         />
         <Route
+          path="/why-me"
+          element={
+            <section className="c-block">
+              <NewJob />
+            </section>
+          }
+        />
+        <Route
           path="/about"
           element={
             <section className="c-block">
-              <NewJob /> <About />
+              <About />
             </section>
           }
         />

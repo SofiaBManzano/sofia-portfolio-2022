@@ -13,25 +13,38 @@ display:block;
   border: 1px solid $black-color;
   border-radius: 3px;
   position: absolute;
-  width: 90%;
-
+  width: 100%;
+height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  justify-content: center;
   @include desktop{
     width: 400px;
     top: 12px;
     left: 12px;
+    height: fit-content;
   }
 &-item{
   width: 100%;
 &-link{
   display: block;
-  padding-top: 12px;
-  padding-bottom: 12px;
+
+  padding-top: 20px;
+  padding-bottom: 20px;
   padding-left: 21%;
+
+  font-size: 18px;
+  color: $secondary-color !important;
+  letter-spacing: .8px;
+
   @include desktop{
+    padding-top: 14px;
+    padding-bottom: 14px;
     padding-left: 17%;
+    font-size: 18px;
+    color: $secondary-color !important;
+    letter-spacing: .8px;
   }
 }
 @include desktop{

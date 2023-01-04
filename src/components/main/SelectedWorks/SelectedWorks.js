@@ -29,7 +29,7 @@ const SelectedWorks = () => {
     },
   };
   return (
-    <article id="work" className="c-block-section">
+    <article id="work" className="c-block-section u-center-block-text">
       <h2 className="c-block-title u-bold-italic">Trabajos seleccionados</h2>
 
       <Carousel responsive={responsive}>

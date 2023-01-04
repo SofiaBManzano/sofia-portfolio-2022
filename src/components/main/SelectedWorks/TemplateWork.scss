@@ -40,6 +40,7 @@ aspect-ratio: 832 / 326;
 
 //CARRUSEL
 .react-multiple-carousel__arrow--right{
+    z-index:5;
     top: calc(5% + 1px) !important;
 
     background-color: $secondary-color;
@@ -50,6 +51,7 @@ aspect-ratio: 832 / 326;
   
 }
 .react-multiple-carousel__arrow--left{
+    z-index:5;
     top: calc(5% + 1px) !important;
     @include tablet{
         top: inherit !important;

@@ -1,23 +1,23 @@
 const About = () => {
   return (
-    <article className="c-block-section">
+    <article className="c-block-section u-center-block-text">
       {" "}
       <h2 className=" c-block-title u-bold-italic">
         Ok... <span className="u-span-inline">pero cuéntame más de ti </span>
       </h2>
       <p>
         Antes del front-end, estuvo el vídeo. Durante 4 años estuve trabajando
-        en una pequeña productora audiovisual, ocupándome de la edición y
-        postproducción de cada vídeo. Al mismo tiempo era freelance, lo que me
-        permitía realizar trabajos más creativos.
+        en una productora audiovisual ocupándome de la edición y postproducción
+        de cada vídeo. Al mismo tiempo trabajaba como postproductora freelance,
+        lo que me permitía realizar trabajos más creativos.
       </p>
       <p>
         En mi última etapa de esta profesión aprendí a modelar en 3D y
-        tratamiento del color en vídeo.
+        etalonaje: tratamiento del color en vídeo.
       </p>
       <p>
         En mi tiempo libre me gusta hacer fotografía analógica. Aunque admito
-        que cada vez uso más el móvil.
+        que cada vez uso más el móvil (¡Y quién no!).
       </p>
       <p>
         Si todavía tienes curiosidad y quieres ver qué estaba haciendo antes de
