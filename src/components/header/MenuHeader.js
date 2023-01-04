@@ -1,19 +1,17 @@
 import ItemsMenu from "./ItemsMenu";
+import { useState } from "react";
 const MenuHeader = (props) => {
-  function changeState() {
-    if (props.menuOpen === "u-hidden") {
-      props.updateMenu("");
-    } else {
-      props.updateMenu("u-hidden");
-    }
+  const [menu, setMenu] = useState(false);
+  const toggleMenu = () =>{
+    setMenu(!menu)
   }
   return (
-    <>
-      <div className="c-header__content-menu" onClick={changeState}>
+    <section className="c-header">
+      <div className="c-header__content-menu" onClick={toggleMenu}>
         <div className="c-header__menu"> </div>
       </div>
-      <ItemsMenu menuOpen={props.menuOpen} />
-    </>
+      <ItemsMenu menu={menu} />
+    </section>
   );
 };
 export default MenuHeader;

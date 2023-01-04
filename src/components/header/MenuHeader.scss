@@ -9,9 +9,14 @@
 }
 .c-header__content-menu {
     cursor: pointer;
-    margin-right: 15px;
-    max-width: 24px;
+    position: fixed;
+    z-index: 999;
+
+    margin: 20px;
+
+    width: 24px;
     height: 21px;
     display: flex;
     align-items: center;
+
 }

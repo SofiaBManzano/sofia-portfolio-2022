@@ -1,17 +1,45 @@
 .c-header-nav{
+ display: none;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    margin: auto;
+    z-index: 10;
+&.isActive{
+display:block;
+}
+&-content{
   background-color: $white-color;
   border: 1px solid $black-color;
   border-radius: 3px;
-  height: 500px;
-    position: absolute;
-    top: 0;
-z-index: 10;
-    width: 100%;
+  position: absolute;
+  width: 90%;
 
-&-content{
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  @include desktop{
+    width: 400px;
+    top: 12px;
+    left: 12px;
+  }
+&-item{
+  width: 100%;
+&-link{
+  display: block;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 21%;
+  @include desktop{
+    padding-left: 17%;
+  }
+}
+@include desktop{
+&-link:hover{
+
+background-color: $secondary-color-light;
+
+}}
+}
 }
 }
