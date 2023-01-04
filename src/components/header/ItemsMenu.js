@@ -1,17 +1,14 @@
 import { Link } from "react-router-dom";
 const ItemsMenu = (props) => {
-
-  function OptionMenu(ev) {
-    console.log(ev.target.id);
-  }
+ 
   return (
-    <nav className={`c-header-nav ${ props.menu ? "isActive" : " "}`}>
+    <nav className={`c-header-nav ${props.menu ? "isActive" : " "}`}>
       <ul className="c-header-nav-content">
         <li className="c-header-nav-content-item u-padding-top-triple ">
           <Link
             id="home"
             to="/"
-            onClick={OptionMenu}
+              onClick={props.toggleMenu}
             className="c-header-nav-content-item-link "
           >
             Ir al inicio
@@ -21,7 +18,7 @@ const ItemsMenu = (props) => {
           <Link
             id="contact"
             to="/contacto"
-            onClick={OptionMenu}
+              onClick={props.toggleMenu}
             className="c-header-nav-content-item-link"
           >
             Ir a contacto
@@ -31,7 +28,7 @@ const ItemsMenu = (props) => {
           <Link
             id="about"
             to="/about"
-            onClick={OptionMenu}
+              onClick={props.toggleMenu}
             className="c-header-nav-content-item-link"
           >
             ¿Por qué yo?
@@ -41,7 +38,7 @@ const ItemsMenu = (props) => {
           <Link
             id="work"
             to="/trabajos-seleccionados"
-            onClick={OptionMenu}
+              onClick={props.toggleMenu}
             className="c-header-nav-content-item-link"
           >
             Trabajos seleccionados

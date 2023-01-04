@@ -1,11 +1,10 @@
 .c-block.c-block-header{
     height: 100vh;
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
     align-items: center;
-
-    padding-top: 30%;
+    justify-content: center;
+    
+    padding-top: 15%;
     padding-bottom: 15%;
 
      @include desktop{
