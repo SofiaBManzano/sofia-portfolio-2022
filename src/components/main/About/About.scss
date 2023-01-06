@@ -1,7 +1,12 @@
-.c-block-iframe-wrapper{
-    @include tablet{
-        max-width: 70%;
-        margin: 0 auto;
-        width: 100%;
-    }
+.c-block-section.c-block-section-about {
+  height: fit-content;
+  padding-top: 60px;
+}
+.c-block-iframe-wrapper {
+  @include tablet {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // margin: 0 auto;
+  }
 }

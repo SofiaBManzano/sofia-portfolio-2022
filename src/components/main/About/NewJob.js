@@ -1,6 +1,6 @@
 const NewJob = () => {
   return (
-    <article className="c-block-section u-center-block-text">
+    <article className="c-block-section c-block-section-past u-center-block-text">
       {" "}
       <h2 className=" c-block-title u-bold-italic">
         ¿Qué me distingue de los demás?{" "}
