@@ -13,15 +13,14 @@ const ItemsMenu = (props) => {
             Ir al inicio
           </Link>
         </li>
-
-        <li className="c-header-nav-content-item">
+        <li className="c-header-nav-content-item ">
           <Link
-            id="about"
-            to="/about"
+            id="work"
+            to="/trabajos-seleccionados"
             onClick={props.toggleMenu}
             className="c-header-nav-content-item-link"
           >
-            Lo que no sabes de mi
+            Trabajos seleccionados
           </Link>
         </li>
         <li className="c-header-nav-content-item">
@@ -34,16 +33,17 @@ const ItemsMenu = (props) => {
             ¿Por qué yo?
           </Link>
         </li>
-        <li className="c-header-nav-content-item ">
+        <li className="c-header-nav-content-item">
           <Link
-            id="work"
-            to="/trabajos-seleccionados"
+            id="about"
+            to="/about"
             onClick={props.toggleMenu}
             className="c-header-nav-content-item-link"
           >
-            Trabajos seleccionados
+            Lo que no sabes de mi
           </Link>
         </li>
+
         <li className="c-header-nav-content-item  u-padding-bottom-double">
           <Link
             id="contact"
