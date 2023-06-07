@@ -1,58 +1,79 @@
-.c-header-nav{
- display: none;
-    width: 100%;
-    position: absolute;
-    top: 0;
-    margin: auto;
-    z-index: 10;
-&.isActive{
-display:block;
-}
-&-content{
-  background-color: $white-color;
-  border: 1px solid $black-color;
-  border-radius: 3px;
+.c-header-nav {
+  display: none;
+  width: 100%;
   position: absolute;
-  width: 100%;
-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-  @include desktop{
-    width: 400px;
-    top: 12px;
-    left: 12px;
-    height: fit-content;
+  top: 0;
+  margin: auto;
+  z-index: 10;
+
+  &.isActive {
+    display: block;
   }
-&-item{
-  width: 100%;
-&-link{
-  display: block;
 
-  padding-top: 20px;
-  padding-bottom: 20px;
-  padding-left: 21%;
+  &-content {
+    background-color: $white-color;
+    border: 1px solid $black-color;
+    border-radius: 3px;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
 
-  font-size: 18px;
-  color: $secondary-color !important;
-  letter-spacing: .8px;
+    @include desktop {
+      width: 400px;
+      top: 12px;
+      left: 12px;
+      height: fit-content;
+    }
 
-  @include desktop{
-    padding-top: 14px;
-    padding-bottom: 14px;
-    padding-left: 17%;
-    font-size: 18px;
-    color: $secondary-color !important;
-    letter-spacing: .8px;
+    &-item {
+      width: 100%;
+
+      &-link {
+        display: block;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-left: 21%;
+        font-size: 18px;
+        color: $secondary-color !important;
+        letter-spacing: 0.8px;
+
+        @include desktop {
+          padding-top: 14px;
+          padding-bottom: 14px;
+          padding-left: 17%;
+          font-size: 18px;
+          color: $secondary-color !important;
+          letter-spacing: 0.8px;
+        }
+
+        &:hover {
+          background-color: $secondary-color-light;
+        }
+      }
+
+      @include desktop {
+        &:first-child {
+          padding-top: 10px;
+        }
+
+        &:last-child {
+          padding-bottom: 10px;
+        }
+
+        &:not(:first-child):not(:last-child) {
+          padding: 10px 0;
+        }
+
+        &:hover {
+          .c-header-nav-content-item-link {
+            background-color: $secondary-color-light;
+          }
+        }
+      }
+    }
   }
-}
-@include desktop{
-&-link:hover{
-
-background-color: $secondary-color-light;
-
-}}
-}
-}
 }

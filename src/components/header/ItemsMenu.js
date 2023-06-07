@@ -1,14 +1,18 @@
 import { Link } from "react-router-dom";
+
 const ItemsMenu = (props) => {
   return (
-    <nav className={`c-header-nav ${props.menu ? "isActive" : " "}`}>
+    <nav
+      className={`c-header-nav ${props.menu ? "isActive" : ""}`}
+      style={{ position: props.menu ? "fixed" : "relative" }}
+    >
       <ul className="c-header-nav-content">
         <li className="c-header-nav-content-item u-padding-top-triple ">
           <Link
             id="home"
             to="/"
             onClick={props.toggleMenu}
-            className="c-header-nav-content-item-link "
+            className="c-header-nav-content-item-link"
           >
             Ir al inicio
           </Link>
@@ -40,10 +44,9 @@ const ItemsMenu = (props) => {
             onClick={props.toggleMenu}
             className="c-header-nav-content-item-link"
           >
-            Lo que no sabes de mi
+            Lo que no sabes de mí
           </Link>
         </li>
-
         <li className="c-header-nav-content-item  u-padding-bottom-double">
           <Link
             id="contact"
@@ -58,4 +61,5 @@ const ItemsMenu = (props) => {
     </nav>
   );
 };
+
 export default ItemsMenu;
